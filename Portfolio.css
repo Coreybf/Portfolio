@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+header{
+    width: 100%;
+    color: #ffff;
+    position: fixed;
+
+}
+nav{
+    background-color: #fb5c07;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+
+}
+.header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    padding-right:50px;
+}
+.nav-links a:hover{
+    color: #fbdb08;
+
+}
+footer{
+    background-color: #fb5c07;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#logo{
+    width: 35%;
+    height: 35%;
+}
+.main{
+    height: 1000px;
+    background-image: url("Images/image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+section{
+    padding-top: 400px;
+    padding-left: 550px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
