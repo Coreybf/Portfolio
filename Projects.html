@@ -5,21 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating a Portfolio with the class</title>
     <link rel="stylesheet" href="Portfolio.css">
+    <style>
+        
+        .skills-projects{
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: lightgray;
+        }
+        #skills-box-projects{
+        background-color: white;
+        margin: 20px;
+        border: 2px black solid;
+        text-align: center;
+        padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color:black;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: greenyellow;
+        }
+        @media(max-width:768px){
+            .skills-projects{
+                grid-template-columns: 1fr;
+                
+            }
+        }
+        @media(min-width:768px){
+            .skills-projects{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+            
+        
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Corey Furman</div>
+            <div class="header">
+                <img  id="logo" src="Images/NewDesign.png" alt="CoreyF. Logo">
+
+            </div>
+           
             <ul class="nav-links">
-                <li><a href="Portfolio.html">Home</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="index.html">Home</a></li>
+                   <li><a href="Projects.html">Projects</a></li>
+                   <li><a href="Resume.html">Resume</a></li>
+                   <li><a href="Contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Project Page</h1>
+    <section class = "skills-projects">
+        
+        <div id="skills-box-projects">
+            <a href="http://127.0.0.1:5500/Week%2014/Day%202/Blog.html">
+            <img src="Images/Blog.png" width="50%" height="50%" alt="Flexbox Blog Page Webpage Image">
+            <h2>CSS Flexbox Blog Page</h2>
+            <p>Responsive flexbox blog page using HTML and CSS Flex properties.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="http://127.0.0.1:5500/Week%2013/Day%204/Modern.html">
+            <img src="Images/resume.png" width="50%" height="50%" alt="Two Column Resume Webpage Image">
+            <h2>CSS Two Column Resume Layout </h2>
+            <p>Use of CSS Properties to design different resume layouts from simple design to modern looking resume.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="http://127.0.0.1:5500/Week%2015/Day%201/Adventure-Travel-Club.html">
+                <img src="Images/Form.png" width="50%" height="50%" alt=" Adventure Club Form Webpage Image">
+                <h2>HTML Forms</h2>
+                <p>HTML Form to create an account to sign up an email.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="http://127.0.0.1:5500/Photo-Collage/index.html">
+                <img src="Images/Collage.png" width="50%" height="50%" alt="Collage Webpage Image">
+                <h2>CSS Photo Collage</h2>
+                <p>An responsive image gallery app for using css grid properties.</p>
+            </a>
+        </div>
+        
+        
+        </div>
         
     </section>
 
